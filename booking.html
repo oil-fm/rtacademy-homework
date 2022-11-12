@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Бронювання залу фотостудії</title>
+    <link rel="stylesheet" type="text/css"
+          href="styles.css">
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Бронювання залу фотостудії </h1>
+</header>
+<main>
+    <form name="feedback" method="get">
+        <ul>
+            <li>
+                <label for="lastname">Прізвище:</label>
+                <input type="text" id="lastname" name="username" placeholder="Введіть прізвище" required
+                       minlength="2" maxlength="64">
+            </li>
+            <li>
+                <label for="name">Імʼя:</label>
+                <input type="text" id="name" name="username" placeholder="Введіть ім'я" required
+                       minlength="2" maxlength="64">
+            </li>
+            <li>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_mail" placeholder="Введіть емейл" required
+                       minlength="6" maxlength="255">
+            </li>
+            <li>
+                <label for="tel">Телефон:</label>
+                <input type="tel" id="tel" placeholder="+380000000000">
+            </li>
+            <li>
+                <label for="url">Профіль в Instagram:</label>
+                <input type="url" id="url" placeholder=" https://www.instagram.com/" required
+                       minlength="23" maxlength="255">
+            </li>
+            <li>
+                <label for="room">Зал:</label>
+                <select id="room">
+                    <option value="1">Зал 1</option>
+                    <option value="2">Зал 2</option>
+                    <option value="3">Зал 3</option>
+                </select>
+            </li>
+            <li>
+                <label for="date">Дата і час початку:</label>
+                <input type="date" name="date" min="2022-10-15"
+                       max="2023-01-01" id="date">
+
+            </li>
+            <li>
+                <label for="end_date">Дата і час кінця:</label>
+                <input type="date" name="date" min="2022-10-15"
+                       max="2023-01-01" id="end_date">
+            </li>
+            <li>
+                <label for="people_count">Кількість людей в залі:</label>
+                <input type="number" min="1" max="10" step="1" id="people_count"
+                value="2">
+            </li>
+
+            <li>
+                <label for="color">Колір фона:</label>
+                <input type="color" id="color">
+            </li>
+            <li>
+                <label for="message">Коментар:</label>
+                <p><textarea id="message" name="message"></textarea></p>
+            </li>
+            <li>
+                <input type="checkbox" value="carrots" checked id="checkbox">
+                <label for="checkbox">Я погоджуюсь з правилами фотостудії:</label>
+            </li>
+            <li>
+                <button type="reset">Очистити</button>
+                <button type="submit">Надіслати</button>
+            </li>
+
+        </ul>
+    </form>
+</main>
+</body>
+</html>
