@@ -1,53 +1,196 @@
-
-header {
-    width: 100%;
-    height: 5em;
+* {
+    padding: 0;
     margin: 0;
-    padding: 8px 0;
-    flex-shrink:0;
-    background-color: #000;
-    font-size: 1rem;
-    position: relative;
-    max-width: none;
-    top: 0;
-    left: 0;
 }
 body {
     background-color: #eee;
-    font-weight: 400;
-    font-style: normal;
-}
-main article {
-    display: inline-block;
-    margin: 5em 5em;
-    padding: 0;
-    width: 4em;
-    height: 0;
-    border: 1em solid #fff;
-
-}
-.footer {
-    width: 100%;
-    height: 5em;
+    color: #000;
+    font: normal 1rem/1.5 Arial, sans-serif;
     margin: 0;
-    padding: 8px 0;
-    flex-shrink:0;
-    background-color: #000;
-    color: #ffffff;
-    font-size: 1rem;
-    position: relative;
-    max-width: none;
-    top: 0;
-    left: 0;
 }
-.link li a {
-    font-style: normal;
-    font-size: 1rem;
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:link {
+}
+a:visited {
+}
+a:focus {
+}
+a:hover {
+}
+a:active {
+}
+header {
+    margin: 0;
+    padding: 2rem 1rem;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+header a {
     color: #fff;
 }
-.content{
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 1rem;
+}
+header nav ul li {
+    margin: 0;
+    padding: 0 1rem 0 0;
+}
+header nav ul li:last-child {
+    padding: 0;
+}
+header label {
+    position: relative;
+    left: -1.5rem;
+}
+header label svg{
+    width: 1rem;
+    height: 1rem;
+    fill: #999;
+    vertical-align: middle;
+}
+header .search-container{
+    position: relative;
+    left: -0.5rem;
+}
+header .search{
+    width: 15rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+    background-color: #000;
+    color: #999;
+    border: 0;
+    border-bottom: 0.1rem solid #999;
+    outline: unset;
+}
+h1 {
+    text-align: center;
+    color: #eee;
+}
+h3 {
+    text-align: center;
+    color: #000;
+    font-size: 7em;
+}
+main,
+footer .inner {
+    margin-right: auto;
+    margin-left: auto;
+}
+main .posts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+main .posts article {
+    width: 19%;
+}
+main .posts article img {
+    width: 100%;
+}
+main .right {
+    display: flex;
+    margin: 2rem 0;
+    padding: 0 2rem 0 0;
+    width: 10%;
+}
+main .right article {
+   top: 10%;
+   left: 10%;
+}
+main .right-sidebar{
 
 }
-image{
+footer {
+    margin: 0;
+    padding: 2.5rem 0;
+    background-color: #000;
+    color: #ffffff;
+}
+footer .inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+footer a {
+    color: #fff;
+}
+footer nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer nav ul li{
+    margin: 0;
+    padding: 0 1rem 0 0;
+}
+footer .write-email{
 
+}
+footer .email{
+    width: 10rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+    background-color: #000;
+    color: #999;
+    border: 0;
+    border-bottom: 0.1rem solid #999;
+    outline: unset;
+}
+footer .social{
+    width: 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
+}
+@media (min-width: 576px) {
+    main,
+    footer .inner {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    main,
+    footer .inner {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    main,
+    footer .inner {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    main,
+    footer .inner {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1400px) {
+    main,
+    footer .inner {
+        max-width: 1320px;
+    }
 }

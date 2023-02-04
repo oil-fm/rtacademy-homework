@@ -6,77 +6,117 @@
     <link rel="stylesheet" type="text/css"
           href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        h1 {
-            text-align: center;
-            color: #eee;
-        }
-        h3 {
-            text-align: center;
-            color: #000;
-            font-size: 7em;
-        }
-    </style>
 </head>
 <body>
 <header>
+    <nav>
+        <ul class="link">
+            <li><a href="#">Mountain</a></li>
+            <li><a href="#">Active</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Collections</a></li>
+        </ul>
+    </nav>
     <h1>
         <a href="index.html" class="logo" title="Cannondale">Cannondale</a>
     </h1>
-    <nav>
-        <ul class="link">
-            <li><a href="styles.css">Mountain</a></li>
-            <li><a href="styles.css">Active</a></li>
-            <li><a href="styles.css">Kids</a></li>
-            <li><a href="styles.css">Collections</a></li>
-        </ul>
-
-    </nav>
+    <div class="search-container">
+        <input autocomplete="off" placeholder="Search" class="search" type="search" name="search" id="search">
+        <label for="search">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg>
+        </label>
+    </div>
 </header>
 <main>
-    <div id="main"><a href="styles.css"></a></div>
+    <div id="main"><a href="#"></a></div>
 
     <div class="posts">
 
         <article>
-          <a href="#"> <img src="../../rtacademy-homework___/website/images/cat_Electric.png" alt="Electric Bikes"></a>
-            <a href="#" class="title"><h2> Electric Bikes</h2></a>
+            <a href="#"> <img src="images/cat_Electric.png" alt="Electric Bikes"></a>
+            <h2><a href="#" class="title"> Electric Bikes</a></h2>
         </article>
 
         <article>
-          <a href="#"><img src="../../rtacademy-homework___/website/images/cat_Mountain.png" alt="Mountain Bikes"></a>
-          <a href="#" class="title"><h2>Mountain Bikes</h2></a>
+            <a href="#"><img src="images/cat_Mountain.png" alt="Mountain Bikes"></a>
+            <h2><a href="#" class="title">Mountain Bikes</a></h2>
         </article>
 
         <article>
-          <a href="#"><img src="../../rtacademy-homework___/website/images/cat_Road.png" alt="Road Bikes"></a>
-          <a href="#" class="title"><h2>Road Bikes</h2></a>
+            <a href="#"><img src="images/cat_Road.png" alt="Road Bikes"></a>
+            <h2><a href="#" class="title">Road Bikes</a></h2>
         </article>
 
         <article>
-          <a href="#"><img src="../../rtacademy-homework___/website/images/subcat_E-Fitness.png" alt="Active Bikes"></a>
-          <a href="#" class="title"><h2>Active Bikes</h2></a>
+            <a href="#"><img src="images/subcat_E-Fitness.png" alt="Active Bikes"></a>
+            <h2><a href="#" class="title">Active Bikes</a></h2>
         </article>
 
-        <article>
-          <a href="#"><img src="../../rtacademy-homework___/website/images/subcat_Gravel.png" alt="Gravel Bikes"></a>
-          <a href="#" class="title"><h2>Gravel Bikes</h2></a>
+        <article class="last-item">
+            <a href="#"><img src="images/subcat_Gravel.png" alt="Gravel Bikes"></a>
+            <h2><a href="#" class="title">Gravel Bikes</a></h2>
         </article>
+    </div>
 
     <h3 class="headline">
         <strong class="rotated label" data-rotated="deg-270"></strong>
-        Introduction to
-        <br>
-        electric bikes
+        Introduction to electric bikes
     </h3>
 
-    </div>
+        <article>
+            <a href="#"> <img src="images/Homepage_E-Bike%20Collections.jpg" alt="Bikes"></a>
+            <h2><a href="#" class="title">What's an electric bike?
+                How far can I ride? Which
+                one is right for me?</a> </h2>
+        </article>
 
+    <div class="right">
+        <section class="right-sidebar">
+            <article>
+                <a href="#"> <img src="images/subcat_Components.png" alt="Components"/></a>
+                <h2><a href="#" class="title">Components</a></h2>
+                <h4> Ultra-premium components, engineered by Cannondale. The ultimate upgrade.</h4>
+            </article>
+
+            <article>
+                <a href="#"><img src="images/subcat_Equipment.png" alt="Accessories"></a>
+                <h2><a href="#" class="title">Accessories</a></h2>
+                <h4>Outfit your bike with these handy essentials.</h4>
+            </article>
+
+            <article>
+                <a href="#"><img src="images/subcat_Helmets.png" alt="Helmets"/></a>
+                <h2><a href="#" class="title">Helmets</a></h2>
+                <h4>Ride safe. Ride stylish.</h4>
+            </article>
+        </section>
+    </div>
 </main>
-<footer class="footer" id="footer">
-     <p>
-        <a href="index.html" class="footer-full-version"></a>
-     </p>
+<footer>
+    <div class="inner">
+        <nav>
+            <ul class="social">
+                <li><a href="#"><img src="images/free-icon-facebook-747374.png" alt="facebook" height="26" width="26" /></a></li>
+                <li><a href="#"><img src="images/free-icon-instagram-717392.png" alt="instagram" height="26" width="26" /></a></li>
+                <li><a href="#"><img src="images/free-icon-youtube-1077046.png" alt="youtube" height="32" width="32" /></a></li>
+            </ul>
+        </nav>
+
+        <div>
+            <nav>
+            <ul class="link">
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Dealer</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            </nav>
+        </div>
+        <div class="write-email">
+            <input autocomplete="off" placeholder="Enter your email" class="email" type="email" name="email" id="email">
+            <label for="email"></label>
+        </div>
+    </div>
 </footer>
 </body>
 </html>
